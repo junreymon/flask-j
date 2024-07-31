@@ -1,0 +1,29 @@
+<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	
+
+							 
+	</head>
+	
+	<body></br></br></br></br></br>
+		<div class="img-container  text-center">
+		<img 	src="{{ url_for('static', filename='descarga.png') }}" class="logo">
+		</div>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">inicio</h1>
+			</div></br></br></br>
+				<h1 class="bottom">
+					HOLA  {{session.username}}!!</br></br>BIEVENIDO POR FIN,DESPUES DE UNA SEMANA				 
+				</h1></br></br></br>
+				<a href="{{ url_for('logout') }}" class="btn">salir de la secion</a>
+		</div>
+		</div>
+	</body>
+</html>
